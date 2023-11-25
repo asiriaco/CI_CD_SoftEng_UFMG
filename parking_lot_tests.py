@@ -5,8 +5,8 @@ class ParkingLotTests:
         print("Testing park car")
         parking_lot = ParkingLot(5)
         parking_lot.park_car("ABC123")
-        assert parking_lot.is_car_parked("ABC123")
-        assert not parking_lot.is_full()
+        assert parking_lot.is_car_parked("ABC123"), "Car should be parked"
+        assert not parking_lot.is_full(), "Parking lot should not be full"
 
     def test_remove_car(self):
         print("Testing remove car")
